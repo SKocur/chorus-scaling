@@ -1,0 +1,2 @@
+step,tokens,elapsed_s,unix_ts,val_loss
+2500,655360000,645.1,1795588951.5,3.1522

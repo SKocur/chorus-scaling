@@ -1,0 +1,36 @@
+{
+ "ckpt": "/workspace/engram-on-wieszcz-xix/checkpoints/screen_e_chorus_48k_s1337/final.pt",
+ "step": 3930,
+ "parameters": 121503552,
+ "vocab_size": 48000,
+ "block_size": 1024,
+ "data": "/workspace/engram-on-wieszcz-xix/tokens48k/val_2026-08-03_tok48k.bin",
+ "tokenizer": "/workspace/engram-on-wieszcz-xix/tokens48k/tokenizer",
+ "boundary": 42791995,
+ "windows": 42261,
+ "device": "cuda",
+ "dtype": "fp32",
+ "by_subset": {
+  "full": {
+   "tokens": 43275264,
+   "bytes": 189134879,
+   "nats_per_token": 4.22303,
+   "bits_per_byte": 1.39401,
+   "bytes_per_token": 4.3705
+  },
+  "first": {
+   "tokens": 42791994,
+   "bytes": 186871159,
+   "nats_per_token": 4.22349,
+   "bits_per_byte": 1.39529,
+   "bytes_per_token": 4.367
+  },
+  "second": {
+   "tokens": 483270,
+   "bytes": 2263720,
+   "nats_per_token": 4.18266,
+   "bits_per_byte": 1.28823,
+   "bytes_per_token": 4.6842
+  }
+ }
+}

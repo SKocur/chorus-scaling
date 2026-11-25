@@ -1,0 +1,37 @@
+{
+  "vocab_size": 8000,
+  "block_size": 1024,
+  "n_layer": 20,
+  "n_head": 15,
+  "n_kv_head": 5,
+  "n_embd": 960,
+  "multiple_of": 64,
+  "dropout": 0.0,
+  "rope_theta": 10000,
+  "seed": 1337,
+  "batch_size": 8,
+  "grad_accum": 32,
+  "muon_lr": 0.12,
+  "lr": 0.0024,
+  "min_lr": 0.00024,
+  "warmup": 300,
+  "max_steps": 5104,
+  "schedule": "wsd",
+  "decay_frac": 0.1,
+  "log_every": 20,
+  "eval_every": 250,
+  "eval_iters": 80,
+  "ckpt_every": 1000,
+  "keep_last": 1,
+  "compile": true,
+  "branch_ckpt_step": 2297,
+  "engram": {
+    "kind": "chorus",
+    "orders": [
+      2,
+      3
+    ],
+    "rows": 208417,
+    "lr_mult": 0.625
+  }
+}

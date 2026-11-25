@@ -1,0 +1,68 @@
+{
+  "run": "screen_e_chorus_48k_s1337",
+  "seed": 1337,
+  "config": "configs/screen_vocab/e_chorus_48k.json",
+  "config_values": {
+    "vocab_size": 48000,
+    "block_size": 1024,
+    "n_layer": 12,
+    "n_head": 9,
+    "n_kv_head": 3,
+    "n_embd": 576,
+    "multiple_of": 64,
+    "dropout": 0.0,
+    "rope_theta": 10000,
+    "seed": 1337,
+    "batch_size": 16,
+    "grad_accum": 16,
+    "muon_lr": 0.015,
+    "lr": 0.0003,
+    "min_lr": 3e-05,
+    "warmup": 231,
+    "max_steps": 3931,
+    "schedule": "wsd",
+    "decay_frac": 0.1,
+    "log_every": 20,
+    "eval_every": 250,
+    "eval_iters": 80,
+    "ckpt_every": 1000,
+    "keep_last": 1,
+    "compile": true,
+    "engram": {
+      "kind": "chorus",
+      "orders": [
+        2,
+        3
+      ],
+      "rows": 34820
+    }
+  },
+  "params_outside_table": 73797504,
+  "params_table": 47706048,
+  "train_tokens": 5152386581,
+  "val_tokens": 43276132,
+  "data": {
+    "train": "/workspace/engram-on-wieszcz-xix/tokens48k/tokens_frozen_tok48k.bin",
+    "train_bytes": 10304773162,
+    "val": "/workspace/engram-on-wieszcz-xix/tokens48k/val_2026-08-03_tok48k.bin",
+    "val_sha256": "a7188cc22c66bdd1c8b5ac1bdac82717efa236be86874773aab2d31cafc4aa6d"
+  },
+  "source_sha256": {
+    "train_engram.py": "e4421cb1ee571589168463b7fa8b0afe2220fa20539a041842ee541eabb2cbd5",
+    "engram.py": "0b98a406acd0a26287aaa4fc43fa56eee598f60e0a0e36f21873a9971bd599a7",
+    "ember.py": "fb7560d83c77d2d4195675cc1263b0c19b75ef71d85fbb5edff2e8d3919f0b98"
+  },
+  "backbone_sha256": {
+    "train": "00510115f46a4c0d7abaed9a93a458b1dcda23c7a179603e47296eaa0f243edd",
+    "model": "0f2a3137cee998440d82a7aa64b5d83bfe4ff79944a6afa1fac88fa666d38ae1"
+  },
+  "env": {
+    "python": "3.12.3",
+    "torch": "2.13.0+cu130",
+    "cuda": "13.0",
+    "device": "cuda",
+    "device_name": "NVIDIA GeForce RTX 5090"
+  },
+  "resume": null,
+  "started_unix": 1795386321.6605022
+}

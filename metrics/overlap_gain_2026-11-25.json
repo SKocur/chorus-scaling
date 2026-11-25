@@ -1,0 +1,159 @@
+{
+  "windows": 8192,
+  "bins": {
+    "all": 8192,
+    "13gram_none": 1390,
+    "13gram_le_10pct": 5328,
+    "13gram_over_10pct": 2864,
+    "13gram_over_50pct": 269,
+    "50gram_none": 6433,
+    "50gram_any": 1759
+  },
+  "sizes": {
+    "16M": {
+      "plain": "screen_b_16m_lr16_s1337+screen_b_16m_lr16_s2",
+      "chorus": "screen_e_chorus_16m_lr16_s1337+screen_e_chorus_16m_lr16_s2",
+      "plain_loss": 3.54887,
+      "chorus_loss": 3.47839,
+      "gain": {
+        "all": 0.07048,
+        "13gram_none": 0.06259,
+        "13gram_le_10pct": 0.06638,
+        "13gram_over_10pct": 0.07811,
+        "13gram_over_50pct": 0.08918,
+        "50gram_none": 0.06779,
+        "50gram_any": 0.08032
+      },
+      "gain_ci95": [
+        0.06987,
+        0.07106
+      ],
+      "multiplier": 1.339,
+      "extrapolated": false,
+      "multiplier_ci95": [
+        1.336,
+        1.342
+      ],
+      "multiplier_50gram_none": 1.329,
+      "extrapolated_50gram_none": false,
+      "multiplier_13gram_none": 1.311,
+      "extrapolated_13gram_none": false
+    },
+    "47M": {
+      "plain": "screen_b_lr16_s1337+screen_b_lr16_s2+screen_b_lr16_s3",
+      "chorus": "screen_e_chorus_lr8_s1337+screen_e_chorus_lr8_s2+screen_e_chorus_lr8_s3",
+      "plain_loss": 3.2831,
+      "chorus_loss": 3.23369,
+      "gain": {
+        "all": 0.04941,
+        "13gram_none": 0.04309,
+        "13gram_le_10pct": 0.04494,
+        "13gram_over_10pct": 0.05773,
+        "13gram_over_50pct": 0.07797,
+        "50gram_none": 0.04628,
+        "50gram_any": 0.06084
+      },
+      "gain_ci95": [
+        0.0489,
+        0.04994
+      ],
+      "multiplier": 1.293,
+      "extrapolated": false,
+      "multiplier_ci95": [
+        1.29,
+        1.296
+      ],
+      "multiplier_50gram_none": 1.277,
+      "extrapolated_50gram_none": false,
+      "multiplier_13gram_none": 1.261,
+      "extrapolated_13gram_none": false
+    },
+    "107M": {
+      "plain": "screen_b_107m_lr16_s1337+screen_b_107m_lr16_s2",
+      "chorus": "screen_e_chorus_107m_lr8_s1337+screen_e_chorus_107m_lr8_s2",
+      "plain_loss": 3.12572,
+      "chorus_loss": 3.09664,
+      "gain": {
+        "all": 0.02908,
+        "13gram_none": 0.02227,
+        "13gram_le_10pct": 0.0245,
+        "13gram_over_10pct": 0.03762,
+        "13gram_over_50pct": 0.05898,
+        "50gram_none": 0.026,
+        "50gram_any": 0.04037
+      },
+      "gain_ci95": [
+        0.02853,
+        0.02963
+      ],
+      "multiplier": 1.203,
+      "extrapolated": false,
+      "multiplier_ci95": [
+        1.199,
+        1.207
+      ],
+      "multiplier_50gram_none": 1.184,
+      "extrapolated_50gram_none": false,
+      "multiplier_13gram_none": 1.159,
+      "extrapolated_13gram_none": false
+    },
+    "204M": {
+      "plain": "screen_b_203m_lr8_s1337+screen_b_203m_lr8_s2",
+      "chorus": "screen_e_chorus_203m_lr4_s1337+screen_e_chorus_203m_lr4_s2",
+      "plain_loss": 3.02357,
+      "chorus_loss": 3.00071,
+      "gain": {
+        "all": 0.02285,
+        "13gram_none": 0.01531,
+        "13gram_le_10pct": 0.01771,
+        "13gram_over_10pct": 0.03243,
+        "13gram_over_50pct": 0.05327,
+        "50gram_none": 0.01947,
+        "50gram_any": 0.03523
+      },
+      "gain_ci95": [
+        0.02232,
+        0.02342
+      ],
+      "multiplier": 1.184,
+      "extrapolated": false,
+      "multiplier_ci95": [
+        1.179,
+        1.188
+      ],
+      "multiplier_50gram_none": 1.158,
+      "extrapolated_50gram_none": false,
+      "multiplier_13gram_none": 1.125,
+      "extrapolated_13gram_none": false
+    },
+    "349M": {
+      "plain": "screen_b_349m_lr8_s1337+screen_b_349m_lr8_s2",
+      "chorus": "screen_e_chorus_349m_lr4_s1337+screen_e_chorus_349m_lr4_s2",
+      "plain_loss": 2.95108,
+      "chorus_loss": 2.93388,
+      "gain": {
+        "all": 0.0172,
+        "13gram_none": 0.0107,
+        "13gram_le_10pct": 0.01248,
+        "13gram_over_10pct": 0.02598,
+        "13gram_over_50pct": 0.04323,
+        "50gram_none": 0.01401,
+        "50gram_any": 0.02887
+      },
+      "gain_ci95": [
+        0.0167,
+        0.01774
+      ],
+      "multiplier": 1.158,
+      "extrapolated": false,
+      "multiplier_ci95": [
+        1.153,
+        1.163
+      ],
+      "multiplier_50gram_none": 1.13,
+      "extrapolated_50gram_none": false,
+      "multiplier_13gram_none": 1.099,
+      "extrapolated_13gram_none": false
+    }
+  }
+}

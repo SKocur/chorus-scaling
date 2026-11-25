@@ -1,0 +1,67 @@
+{
+  "run": "screen_e_chorus_mb8_s1337",
+  "seed": 1337,
+  "config": "configs/screen/e_chorus_mb8.json",
+  "config_values": {
+    "vocab_size": 8000,
+    "block_size": 1024,
+    "n_layer": 12,
+    "n_head": 9,
+    "n_kv_head": 3,
+    "n_embd": 576,
+    "multiple_of": 64,
+    "dropout": 0.0,
+    "rope_theta": 10000,
+    "seed": 1337,
+    "batch_size": 8,
+    "grad_accum": 32,
+    "muon_lr": 0.015,
+    "lr": 0.0003,
+    "min_lr": 3e-05,
+    "warmup": 300,
+    "max_steps": 5104,
+    "schedule": "wsd",
+    "decay_frac": 0.1,
+    "log_every": 20,
+    "eval_every": 250,
+    "eval_iters": 80,
+    "ckpt_every": 1000,
+    "keep_last": 1,
+    "compile": true,
+    "engram": {
+      "kind": "chorus",
+      "orders": [
+        2,
+        3
+      ],
+      "rows": 74820
+    }
+  },
+  "params_outside_table": 50757504,
+  "params_table": 47706048,
+  "train_tokens": 6689593236,
+  "val_tokens": 56363707,
+  "data": {
+    "train": "/home/szymon/research/wieszcz/wieszcz-xix/data/tokens_frozen_6.69B.bin",
+    "train_bytes": 13379186472,
+    "val": "/home/szymon/research/wieszcz/wieszcz-xix/data/val_2026-08-03.bin",
+    "val_sha256": "e9ca748bf42d0439cf1d6267c2549414f834ec2e8b3152e002e173eba6e1c91e"
+  },
+  "source_sha256": {
+    "train_engram.py": "776eb25002ac9d37d48fc1bfd5c8afd297248114a0a84d6f0088067a68831076",
+    "engram.py": "968deb4237130d5af608b5ee444cb228dcd6f1c6bbcab078297a95768d50c430"
+  },
+  "backbone_sha256": {
+    "train": "00510115f46a4c0d7abaed9a93a458b1dcda23c7a179603e47296eaa0f243edd",
+    "model": "0f2a3137cee998440d82a7aa64b5d83bfe4ff79944a6afa1fac88fa666d38ae1"
+  },
+  "env": {
+    "python": "3.14.4",
+    "torch": "2.13.0+cu130",
+    "cuda": "13.0",
+    "device": "cuda",
+    "device_name": "NVIDIA GeForce RTX 3080"
+  },
+  "resume": null,
+  "started_unix": 1795250413.2896776
+}

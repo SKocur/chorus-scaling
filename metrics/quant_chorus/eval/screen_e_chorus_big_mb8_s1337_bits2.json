@@ -1,0 +1,78 @@
+{
+  "ckpt": "/home/szymon/research/engram-on-wieszcz-xix/checkpoints/screen_e_chorus_big_mb8_s1337/final.pt",
+  "step": 5103,
+  "params_outside_table": 50757504,
+  "params_table": 201307968,
+  "engram": {
+    "kind": "chorus",
+    "orders": [
+      2,
+      3
+    ],
+    "rows": 341490
+  },
+  "device": "cpu",
+  "dtype": "fp32",
+  "batch_size": 8,
+  "block_size": 1024,
+  "data": {
+    "path": "/home/szymon/research/wieszcz/wieszcz-xix/data/val_2026-08-03.bin",
+    "bytes": 112727414,
+    "head_tail_sha256": "a5c1894f5ab7edbf593249e6a63d6c11a39a910bd213b1406e418c4aa9e047fd"
+  },
+  "zeroed_table_rows": null,
+  "quantized_table": {
+    "bits": 2,
+    "rows": 1397972,
+    "bytes": 53122936,
+    "bytes_bf16": 402615936,
+    "relative_error": 0.7731438701974667
+  },
+  "by_subset": {
+    "full": {
+      "cross_entropy_nats": 3.4467,
+      "sem": 0.01779,
+      "ci95": [
+        3.41184,
+        3.48156
+      ],
+      "windows_evaluated": 1024,
+      "windows_available": 55042,
+      "first_window_token": 0,
+      "last_window_token": 56361984,
+      "span_fraction": 1.0,
+      "tokens_scored": 1048576,
+      "wall_s": 216.2
+    },
+    "internet_archive": {
+      "cross_entropy_nats": 3.44654,
+      "sem": 0.01755,
+      "ci95": [
+        3.41213,
+        3.48094
+      ],
+      "windows_evaluated": 1024,
+      "windows_available": 54451,
+      "first_window_token": 0,
+      "last_window_token": 55756800,
+      "span_fraction": 1.0,
+      "tokens_scored": 1048576,
+      "wall_s": 218.1
+    },
+    "wolne_lektury": {
+      "cross_entropy_nats": 3.51628,
+      "sem": 0.01159,
+      "ci95": [
+        3.49357,
+        3.53898
+      ],
+      "windows_evaluated": 591,
+      "windows_available": 591,
+      "first_window_token": 0,
+      "last_window_token": 604160,
+      "span_fraction": 1.0,
+      "tokens_scored": 605184,
+      "wall_s": 148.2
+    }
+  }
+}

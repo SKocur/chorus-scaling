@@ -1,0 +1,10 @@
+This package contains code written after the following works, both distributed under the Apache
+License 2.0 (text in LICENSES/Apache-2.0.txt):
+
+- Chorus, by Stephen Chung and Wenyu Du (DualverseAI), arXiv 2611.23386,
+  https://github.com/dualverse-ai/chorus. src/chorus.py follows ChorusMemory and src/ember.py
+  follows its Ember table optimiser (oe_mfree_step), both in chorus/memory_modules.py.
+- Engram, by Cheng et al. (DeepSeek), arXiv 2601.07372, https://github.com/deepseek-ai/Engram.
+  src/engram.py follows the module of its demo, engram_demo_v1.py.
+
+Both are reimplementations with changes described in the module docstrings and in the paper.

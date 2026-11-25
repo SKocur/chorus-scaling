@@ -1,0 +1,38 @@
+{
+  "train": "/home/szymon/research/wieszcz/wieszcz-xix/data/tokens_frozen_6.69B.bin",
+  "val": "/home/szymon/research/wieszcz/wieszcz-xix/data/val_2026-08-03.bin",
+  "train_tokens": 6689593236,
+  "val_tokens": 56363707,
+  "windows": 8192,
+  "block": 1024,
+  "per_n": {
+    "13": {
+      "unique_ngrams": 8267993,
+      "found": 881665,
+      "share_of_scored_ngrams_found": 0.109644,
+      "windows_with_any": 6802,
+      "windows_over_10pct": 2864,
+      "windows_over_50pct": 269,
+      "windows_over_90pct": 0,
+      "match_check": {
+        "checked": 200,
+        "equal": 200
+      },
+      "seconds": 278
+    },
+    "50": {
+      "unique_ngrams": 7993871,
+      "found": 78144,
+      "share_of_scored_ngrams_found": 0.009907,
+      "windows_with_any": 1759,
+      "windows_over_10pct": 226,
+      "windows_over_50pct": 1,
+      "windows_over_90pct": 0,
+      "match_check": {
+        "checked": 200,
+        "equal": 200
+      },
+      "seconds": 736
+    }
+  }
+}

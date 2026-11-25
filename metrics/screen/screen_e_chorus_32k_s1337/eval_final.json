@@ -1,0 +1,72 @@
+{
+  "ckpt": "/workspace/engram-on-wieszcz-xix/checkpoints/screen_e_chorus_32k_s1337/final.pt",
+  "step": 4112,
+  "params_outside_table": 64581504,
+  "params_table": 47706048,
+  "engram": {
+    "kind": "chorus",
+    "orders": [
+      2,
+      3
+    ],
+    "rows": 50820
+  },
+  "device": "cuda",
+  "dtype": "fp32",
+  "batch_size": 8,
+  "block_size": 1024,
+  "data": {
+    "path": "/workspace/engram-on-wieszcz-xix/tokens32k/val_2026-08-03_tok32k.bin",
+    "bytes": 90557598,
+    "head_tail_sha256": "fc9805974028aa2f6413d36fc60dd620ad6f4f98078f46e89894de89804d8542"
+  },
+  "zeroed_table_rows": null,
+  "quantized_table": null,
+  "by_subset": {
+    "full": {
+      "cross_entropy_nats": 4.03755,
+      "sem": 0.00645,
+      "ci95": [
+        4.02491,
+        4.05018
+      ],
+      "windows_evaluated": 8192,
+      "windows_available": 44217,
+      "first_window_token": 0,
+      "last_window_token": 45277184,
+      "span_fraction": 1.0,
+      "tokens_scored": 8388608,
+      "wall_s": 37.4
+    },
+    "internet_archive": {
+      "cross_entropy_nats": 4.04028,
+      "sem": 0.00632,
+      "ci95": [
+        4.0279,
+        4.05266
+      ],
+      "windows_evaluated": 8192,
+      "windows_available": 43723,
+      "first_window_token": 0,
+      "last_window_token": 44771328,
+      "span_fraction": 1.0,
+      "tokens_scored": 8388608,
+      "wall_s": 37.2
+    },
+    "wolne_lektury": {
+      "cross_entropy_nats": 3.99991,
+      "sem": 0.01232,
+      "ci95": [
+        3.97576,
+        4.02407
+      ],
+      "windows_evaluated": 494,
+      "windows_available": 494,
+      "first_window_token": 0,
+      "last_window_token": 504832,
+      "span_fraction": 1.0,
+      "tokens_scored": 505856,
+      "wall_s": 2.2
+    }
+  }
+}

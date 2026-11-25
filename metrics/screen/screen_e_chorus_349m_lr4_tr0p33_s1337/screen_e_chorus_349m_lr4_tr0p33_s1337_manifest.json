@@ -1,0 +1,70 @@
+{
+  "run": "screen_e_chorus_349m_lr4_tr0p33_s1337",
+  "seed": 1337,
+  "config": "configs/screen_349m/e_chorus_349m_lr4_tr0p33.json",
+  "config_values": {
+    "vocab_size": 8000,
+    "block_size": 1024,
+    "n_layer": 24,
+    "n_head": 18,
+    "n_kv_head": 6,
+    "n_embd": 1152,
+    "multiple_of": 64,
+    "dropout": 0.0,
+    "rope_theta": 10000,
+    "seed": 1337,
+    "batch_size": 8,
+    "grad_accum": 32,
+    "muon_lr": 0.06,
+    "lr": 0.0012,
+    "min_lr": 0.00012,
+    "warmup": 300,
+    "max_steps": 5104,
+    "schedule": "wsd",
+    "decay_frac": 0.1,
+    "log_every": 20,
+    "eval_every": 250,
+    "eval_iters": 80,
+    "ckpt_every": 1000,
+    "keep_last": 1,
+    "compile": true,
+    "engram": {
+      "kind": "chorus",
+      "orders": [
+        2,
+        3
+      ],
+      "rows": 300475,
+      "lr_mult": 0.4166666666666667
+    },
+    "branch_ckpt_step": 2297
+  },
+  "params_outside_table": 374291328,
+  "params_table": 355366656,
+  "train_tokens": 6689593236,
+  "val_tokens": 56363707,
+  "data": {
+    "train": "/workspace/engram-on-wieszcz-xix/tokens/tokens_frozen_6.69B.bin",
+    "train_bytes": 13379186472,
+    "val": "/workspace/engram-on-wieszcz-xix/tokens/val_2026-08-03.bin",
+    "val_sha256": "e9ca748bf42d0439cf1d6267c2549414f834ec2e8b3152e002e173eba6e1c91e"
+  },
+  "source_sha256": {
+    "train_engram.py": "b2595a7ff571549063a28fa10860206f2ed25bc98e20b41ca67e260cb62fdf3d",
+    "engram.py": "4b486bc7c978acecbd496708abc6cf533edc50ad806680b4e6884802277aaeb0",
+    "ember.py": "fb7560d83c77d2d4195675cc1263b0c19b75ef71d85fbb5edff2e8d3919f0b98"
+  },
+  "backbone_sha256": {
+    "train": "00510115f46a4c0d7abaed9a93a458b1dcda23c7a179603e47296eaa0f243edd",
+    "model": "0f2a3137cee998440d82a7aa64b5d83bfe4ff79944a6afa1fac88fa666d38ae1"
+  },
+  "env": {
+    "python": "3.12.3",
+    "torch": "2.13.0+cu130",
+    "cuda": "13.0",
+    "device": "cuda",
+    "device_name": "NVIDIA GeForce RTX 5090"
+  },
+  "resume": null,
+  "started_unix": 1795583747.237004
+}
